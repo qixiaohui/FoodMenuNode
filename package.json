@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js" 
   },
   "author": "xiaohui qi",
   "license": "ISC",
   "devDependencies": {
+    "apicache": "^0.1.0",
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "cors": "^2.8.1",
@@ -16,6 +18,8 @@
     "fs": "0.0.1-security",
     "http": "0.0.0",
     "https": "^1.0.0",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "underscore": "^1.8.3",
+    "x-ray": "^2.3.0"
   }
 }
