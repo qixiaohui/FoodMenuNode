@@ -6,8 +6,7 @@ const router = express.Router();
 const _ = require('underscore');
 const scrapper = require('./foodsubindex_scrapper');
 
-router.get('/caipufenlei', apicache('1 day'), (req, res) => {
-    req.apicacheGroup = req.headers.url;
+router.get('/caipufenlei', (req, res) => {
     let url = req.headers.url;
 
     if(!url){

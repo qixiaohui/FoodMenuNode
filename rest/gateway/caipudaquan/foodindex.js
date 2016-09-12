@@ -7,7 +7,6 @@ const _ = require('underscore');
 const scrapper = require('./foodindex_scrapper');
 
 router.get('/caipudaquan', apicache('1 day'), (req, res) => {
-    req.apicacheGroup = req.params.id;
     //let index = req.params.index;
 
     let promise = new Promise((resolve, reject) => {

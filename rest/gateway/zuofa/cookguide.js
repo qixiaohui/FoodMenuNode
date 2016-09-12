@@ -6,8 +6,7 @@ const router = express.Router();
 const _ = require('underscore');
 const scrapper = require('./cookguide_scrapper');
 
-router.get('/zuofa', apicache('1 day'), (req, res) => {
-    req.apicacheGroup = req.headers.url;
+router.get('/zuofa', (req, res) => {
     let url = req.headers.url;
 
     if(!url){
